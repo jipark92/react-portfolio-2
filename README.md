@@ -1,1 +1,4 @@
-# react-portfolio-2
+
+Personal Portfolio
+
+Live: https://jipark.netlify.app/
