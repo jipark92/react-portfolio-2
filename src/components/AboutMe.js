@@ -12,10 +12,11 @@ export default function AboutMe() {
                 <a href="">RESUME</a>
             </div>
             <div className='about-me-container-2'>
-                <h2>Can an break-dancer teach themself to program? This portfolio website can be your answer.</h2>
+                <h2>Can an self-taught breakdancer teach themself to program as well? This portfolio website can be your answer.</h2>
                 <h2>Web development allows me to express my creativity in a more satisfying way, to create with clear structure and to focus in on details in a way I've never been able to do before.</h2>
+                <h2>As someone with a keen interest in tech and a knack for problem-solving, web development was an obvious path.</h2>
                 <div className='favorite-tools'>
-                    <h3>My Favorite Tools: </h3>
+                    <h3>My Skills: </h3>
                     <img src="https://img.icons8.com/office/344/react.png" />
                     <img src="https://img.icons8.com/color/344/javascript--v1.png" />
                     <img src="https://img.icons8.com/ios-filled/344/html-5--v1.png" />

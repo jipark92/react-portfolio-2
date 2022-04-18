@@ -170,7 +170,6 @@ export default function Projects() {
     })
 
     const [showProjects, setShowProjects] = useState(showAllProjects)
-  
 
     return (
         <div className='skills-container'>
