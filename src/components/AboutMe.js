@@ -13,7 +13,8 @@ export default function AboutMe() {
             <div className='about-me-container-2'>
                 <h2>Can an break-dancer teach themself to program? This portfolio website can be your answer.</h2>
                 <h2>Web development allows me to express my creativity in a more satisfying way, to create with clear structure and to focus in on details in a way I've never been able to do before.</h2>
-                <h2>A self learned frontend engineer </h2>
+                <h2>place holder A self learned frontend engineer </h2>
+                <h2>place holder</h2>
             </div>
         </div>
     )

@@ -1,6 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
+import projectDatas from '../data'
 
 export default function Projects() {
+
+    const showAllProjects = projectDatas.map((projectData)=>{
+        if(projectData.type === "javascript" || projectData.type === "react"){
+            return (
+                <div className='projects'>
+                    <p>{projectData.name}</p>
+                </div>
+            )
+        }
+    })
+
+    const [showProjects, setShowProjects] = useState(showAllProjects)
+
+
     return (
         <div className='skills-container'>
             <div className='langauge-title'>
@@ -13,7 +28,7 @@ export default function Projects() {
                 {/* <button>Node</button> */}
             </div>
             <div className='projects-container'>
-                <div>project display</div>
+                {showProjects}
             </div>
         </div>
     )

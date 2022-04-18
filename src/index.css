@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   background: url('https://img.freepik.com/free-vector/shiny-white-gray-background-with-wavy-lines_1017-25101.jpg?t=st=1650297499~exp=1650298099~hmac=99521d31072db3ea8201959a04f34f1c27fa201d36ad0a908120c3a5298688d0&w=740');
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
 }
 
@@ -67,7 +67,7 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100%;
+  min-height: 100%;
 }
 
 .about-me-container{ 
@@ -75,10 +75,10 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  height:100%;
   width:50%;
   justify-content: space-evenly;
-  border-right: 1px solid black;
+  /* border-right: 1px solid black; */
 }
 
 .about-me-container-2{ 
@@ -86,15 +86,16 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
   width:50%;
+  height: 100%;
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 3rem;
+  gap: 2rem;
 }
 
 .about-me-container-2 h2{ 
-  border: 1px solid rgb(155, 6, 214);
-  min-width:225px;
+  /* border: 1px solid rgb(155, 6, 214); */
+  min-width: 10%;
 }
 
 .profile-picture {
@@ -215,10 +216,20 @@ a {
 .projects-container {
   border: 1px solid black;
   height: 90%;
-  width: 100%;
+  min-width: 100%;
   padding: 1rem;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  border: 1px solid black;
+  min-width: 25%;
+  height: 25%;
+
 }
 
 .footer-container {
@@ -233,8 +244,14 @@ h1:hover, h2:hover, h3:hover, p:hover, a:hover{
   color: rgb(77, 61, 61);
 }
 
-@media (min-width: 300px){
+@media (max-width: 650px){
+  .about-me-container h1,h2 {
+    font-size: 1.2rem;
+    /* border: 1px solid black; */
+  }
   .about-me-container-2 h2 {
     font-size: 1.2rem;
+    min-width: 200px;
+    /* border: 1px solid black; */
   }
 }
