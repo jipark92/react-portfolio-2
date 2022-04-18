@@ -51,6 +51,7 @@ li {
   list-style-type: none;
   font-size: 1.4rem;
   color: black;
+  /* text-shadow: 1px 1px 4px currentColor; */
 }
 
 li:hover {
@@ -96,6 +97,22 @@ a {
 .about-me-container-2 h2{ 
   /* border: 1px solid rgb(155, 6, 214); */
   width: 100%;
+}
+
+.favorite-tools {
+  display: flex;
+  flex-direction: ;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-tools img {
+  height: 50px;
+  width: 50px;
+}
+
+.favorite-tools img:hover {
+  transform: scale(1.2);
 }
 
 .profile-picture-container{
@@ -222,6 +239,7 @@ a {
 .filter-bar button:hover {
   transform: scale(1.1);
   cursor: pointer;
+  background-color: lightcyan;
 }
 
 .projects-container{
@@ -231,6 +249,8 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 50px currentColor;
 }
 
 .projects-list {
@@ -253,7 +273,6 @@ a {
   height: 450px;
   display: flex;
   justify-content: space-between;
-  /* mheight: 100%; */
 }
 
 .project-picture-container {
@@ -281,8 +300,24 @@ a {
   justify-content: space-evenly;
   /* border: 1px solid black; */
   width: 100%;
-  
 }
+
+.live-source-container a:nth-child(1) {
+  border: 2px solid rgb(33,201,152);
+  border-radius: 25px;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  color: rgb(33,201,152);
+}
+
+.live-source-container a:nth-child(2) {
+  border: 2px solid black;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  color: black;
+}
+
 
 .prev-btn {
   font-size: 4rem;
@@ -316,6 +351,10 @@ a {
   justify-content: center;
   align-items: center;
   min-height: 5%;
+}
+
+.footer-container a {
+  color: black;
 }
 
 h1:hover, h2:hover, h3:hover, p:hover, a:hover{

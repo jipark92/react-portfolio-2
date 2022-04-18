@@ -126,7 +126,7 @@ export default function Projects() {
                         <div>
                             <p>Project Name:</p>
                             <h1>{projectData.name}</h1>
-                            <h5>{projectData.type}</h5>
+                            <h5>{projectData.type} / HTML / CSS</h5>
                         </div>
                         <div>
                             <p>Description: </p>
@@ -134,7 +134,7 @@ export default function Projects() {
                         </div>
                         <div className='live-source-container'>
                             <a href={projectData.live}>DEMO</a>   
-                            <a href={projectData.repo}>SOURCE</a>                      
+                            <a href={projectData.repo}>CODE</a>                      
                         </div>
                     </div>
                 </div>
@@ -153,7 +153,7 @@ export default function Projects() {
                         <div>
                             <p>Project Name:</p>
                             <h1>{reactData.name}</h1>
-                            <h5>{reactData.type}</h5>
+                            <h5>{reactData.type} / HTML / CSS</h5>
                         </div>
                         <div>
                             <p>Description: </p>
@@ -161,7 +161,7 @@ export default function Projects() {
                         </div>
                         <div className='live-source-container'>
                             <a href={reactData.live}>DEMO</a>   
-                            <a href={reactData.repo}>SOURCE</a>                      
+                            <a href={reactData.repo}>CODE</a>                      
                         </div>
                     </div>
                 </div>
@@ -170,7 +170,7 @@ export default function Projects() {
     })
 
     const [showProjects, setShowProjects] = useState(showAllProjects)
-
+  
 
     return (
         <div className='skills-container'>
@@ -182,7 +182,7 @@ export default function Projects() {
                 <button onClick={reactFilterBtn}>React</button>
                 {/* <button>Node</button> */}
             </div>
-            <h2>{showReact? "React":"Javascript"}</h2>
+            <h1>{showReact? "React":"Javascript"}</h1>
             <div className='projects-container'>
                 <button className='prev-btn' onClick={showReact?reactPrevBtn:prevBtn}>&#8678;</button>
                 <div className='projects-list'>
@@ -192,6 +192,9 @@ export default function Projects() {
             </div>
             <div>
                 <h3>Project: {projectNumber} of {showReact?reactDatas.length:projectDatas.length}</h3>
+            </div>
+            <div>
+                <p>You can find my smaller projects at <a href="https://github.com/norfkorean">GitHub</a></p>
             </div>
         </div>
     )
