@@ -428,4 +428,8 @@ h1:hover, h2:hover, h3:hover, p:hover, a:hover{
     padding: 1rem;
     gap: 0.5rem;
   }
+
+  h2 {
+    font-size: 1.2rem;
+  }
 }
