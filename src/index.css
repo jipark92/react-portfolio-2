@@ -242,6 +242,7 @@ a {
   height: 500px;
   display: flex;
   justify-content: space-between;
+  /* mheight: 100%; */
 }
 
 .project-picture-container {
@@ -292,5 +293,46 @@ h1:hover, h2:hover, h3:hover, p:hover, a:hover{
   .about-me-container-2{ 
     /* border: 1px solid rgb(155, 6, 214); */
     width: 100%;
+  }
+
+  .projects-container {
+    border: 1px solid black;
+    height: 90%;
+    width: 75%;
+    margin: 1rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+  }
+  .projects {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* mheight: 100%; */
+  }
+  .project-picture-container {
+    width: 100%;
+    height: 450px;
+  }
+
+  .project-picture{
+    width: 100%;
+    height: 100%;
+  }
+  .project-description-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 0.5rem;
   }
 }
