@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import projectDatas from '../jsData'
+import reactDatas from '../reactData'
 
 export default function Projects() {
 
@@ -92,22 +93,42 @@ export default function Projects() {
                         <div>
                             <p>Project Name:</p>
                             <h1>{projectData.name}</h1>
+                            <h5>{projectData.type}</h5>
                         </div>
                         <div>
                             <p>Description: </p>
                             <h2>{projectData.description}</h2>
                         </div>
+                        <div className='live-source-container'>
+                            <a href={projectData.live}>DEMO</a>   
+                            <a href={projectData.repo}>SOURCE</a>                      
+                        </div>
+                    </div>
+                </div>
+            )
+        }
+    })
+
+    const showReactProjects = reactDatas.map((reactData)=>{
+        if(reactData.type === "React"){
+            return (
+                <div className='projects' key={reactData.id}>
+                    <div className='project-picture-container'>
+                        <img src={reactData.img} className="project-picture"/>
+                    </div>
+                    <div className='project-description-container'>
                         <div>
-                            <p>Language: </p>
-                            <h3>{projectData.type}</h3>
+                            <p>Project Name:</p>
+                            <h1>{reactData.name}</h1>
+                            <h5>{reactData.type}</h5>
                         </div>
                         <div>
-                            <p>Demo: </p>
-                            <h3>{projectData.live}</h3>
+                            <p>Description: </p>
+                            <h2>{reactData.description}</h2>
                         </div>
-                        <div>
-                            <p>Source: </p>
-                            <h3>{projectData.repo}</h3>
+                        <div className='live-source-container'>
+                            <a href={reactData.live}>DEMO</a>   
+                            <a href={reactData.repo}>SOURCE</a>                      
                         </div>
                     </div>
                 </div>

@@ -276,6 +276,14 @@ a {
   padding: 1rem;
 }
 
+.live-source-container {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+  width: 100%;
+  
+}
+
 .prev-btn {
   font-size: 4rem;
   background: none;
@@ -300,6 +308,7 @@ a {
   color: green;
   cursor: pointer;
 }
+
 
 .footer-container {
   border-top: 3px solid black;
@@ -340,6 +349,7 @@ h1:hover, h2:hover, h3:hover, p:hover, a:hover{
     justify-content: center;
     align-items: center;
     overflow-x: scroll;
+    overflow: hidden;
   }
   .projects {
     /* border: 1px solid black; */
@@ -352,7 +362,7 @@ h1:hover, h2:hover, h3:hover, p:hover, a:hover{
   }
   .project-picture-container {
     width: 100%;
-    height: 450px;
+    height: 250px;
   }
 
   .project-picture{
