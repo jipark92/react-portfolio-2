@@ -3,11 +3,8 @@ import projectDatas from '../jsData'
 import reactDatas from '../reactData'
 
 export default function Projects() {
-
     const [projectNumber, setProjectNumber] = useState(1)
     const [showReact, setShowReact] = useState(false);
-
-    
 
     const prevBtn = () => {
         const projects = document.querySelectorAll('.projects');
@@ -66,6 +63,54 @@ export default function Projects() {
             setProjectNumber(8);
         } else {
             setProjectNumber(1);
+            projects[0].scrollIntoView()
+        }
+    }
+
+    const reactFilterBtn = () => {
+        const projects = document.querySelectorAll('.projects');
+        setShowReact(true)
+        setProjectNumber(1)
+        projects[0].scrollIntoView()
+    }
+
+    const javaScriptFilterBtn = () => {
+        const projects = document.querySelectorAll('.projects');
+        setShowReact(false)
+        setProjectNumber(1)
+        projects[0].scrollIntoView()
+    }
+
+    const reactPrevBtn = () => {
+        const projects = document.querySelectorAll('.projects');
+        if ( projectNumber === 2){
+            projects[0].scrollIntoView()
+            setProjectNumber(1)
+        } else if (projectNumber === 3) {
+            projects[1].scrollIntoView()
+            setProjectNumber(2)
+        } else if (projectNumber === 4) {
+            projects[2].scrollIntoView()
+            setProjectNumber(3)
+        } else {
+            projects[2].scrollIntoView()
+            setProjectNumber(3)
+        }
+    }
+
+    const reactNextBtn = () => {
+        const projects = document.querySelectorAll('.projects');
+        if (projectNumber === 0 ) {
+            projects[0].scrollIntoView()
+            setProjectNumber(1);
+        } else if (projectNumber === 1){
+            projects[1].scrollIntoView()
+            setProjectNumber(2);
+        } else if (projectNumber === 2){
+            projects[2].scrollIntoView()
+            setProjectNumber(3);
+        } else {
+            setProjectNumber(1)
             projects[0].scrollIntoView()
         }
     }
@@ -133,17 +178,17 @@ export default function Projects() {
                 <h2>Programming Languages</h2>
             </div>
             <div className='filter-bar'>
-                <button onClick={()=>{setShowReact(false)}}>JavaScript</button>
-                <button onClick={()=>{setShowReact(true)}}>React</button>
+                <button onClick={javaScriptFilterBtn}>JavaScript</button>
+                <button onClick={reactFilterBtn}>React</button>
                 {/* <button>Node</button> */}
             </div>
-            <h2>Javascript</h2>
+            <h2>{showReact? "React":"Javascript"}</h2>
             <div className='projects-container'>
-                <button className='prev-btn' onClick={prevBtn}>&#8678;</button>
+                <button className='prev-btn' onClick={showReact?reactPrevBtn:prevBtn}>&#8678;</button>
                 <div className='projects-list'>
                     {showReact?showReactProjects:showProjects}
                 </div>
-                <button className='next-btn' onClick={nextBtn}>&#8680;</button>
+                <button className='next-btn' onClick={showReact?reactNextBtn:nextBtn}>&#8680;</button>
             </div>
             <div>
                 <h3>Project: {projectNumber} of {showReact?reactDatas.length:projectDatas.length}</h3>
