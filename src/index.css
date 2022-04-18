@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: url('https://images.unsplash.com/photo-1650179743769-89e0cc27c21c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'); */
+  background: url('https://img.freepik.com/free-vector/shiny-white-gray-background-with-wavy-lines_1017-25101.jpg?t=st=1650297499~exp=1650298099~hmac=99521d31072db3ea8201959a04f34f1c27fa201d36ad0a908120c3a5298688d0&w=740');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -37,14 +37,14 @@ header{
 
 nav {
   /* border: 1px solid black; */
-  width: 100%;
+  width: 50%;
 }
 
 ul {
   display:flex;
   flex-wrap: wrap;
   /* border: 1px solid black; */
-  width: 100%;
+  /* width: 100%; */
   justify-content: space-evenly;
 }
 
@@ -76,7 +76,7 @@ a {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  min-width:50%;
+  width:50%;
   justify-content: space-evenly;
   border-right: 1px solid black;
 }
@@ -87,8 +87,14 @@ a {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  min-width:50%;
+  width:50%;
   justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.about-me-container-2 h2{ 
+  border: 1px solid rgb(155, 6, 214);
+  min-width:225px;
 }
 
 .profile-picture {
@@ -100,7 +106,7 @@ a {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -196,7 +202,7 @@ a {
 
 .filter-bar button {
   font-size: 1.2rem;
-  padding:0.3rem;
+  padding:0.2rem;
   background: none;
   border: 2px solid black;
 }
@@ -224,5 +230,11 @@ a {
 }
 
 h1:hover, h2:hover, h3:hover, p:hover, a:hover{
-  color: gray;
+  color: rgb(77, 61, 61);
+}
+
+@media (min-width: 300px){
+  .about-me-container-2 h2 {
+    font-size: 1.2rem;
+  }
 }

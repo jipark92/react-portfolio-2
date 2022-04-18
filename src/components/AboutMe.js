@@ -7,15 +7,13 @@ export default function AboutMe() {
                 <div className='profile-image'>
                     <img src="https://avatars.githubusercontent.com/u/93008833?v=4" alt="profile-pictures" className='profile-picture'/>
                 </div>
-                <h2>Ji Young Park</h2>
-                <h3>Software Developer</h3>
+                <h1>Hi, I am Ji Young Park</h1>
+                <h2>Frontend Engineer</h2>
             </div>
             <div className='about-me-container-2'>
-                <p>Description</p>
-                <p>place holder</p>
-                <p>place holder</p>
-                <p>place holder</p>
-                <p>place holder</p>
+                <h2>Can an break-dancer teach themself to program? This portfolio website can be your answer.</h2>
+                <h2>Web development allows me to express my creativity in a more satisfying way, to create with clear structure and to focus in on details in a way I've never been able to do before.</h2>
+                <h2>A self learned frontend engineer </h2>
             </div>
         </div>
     )
