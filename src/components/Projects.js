@@ -3,6 +3,10 @@ import projectDatas from '../data'
 
 export default function Projects() {
 
+    const projectList = document.querySelectorAll('.projects')
+    console.log(projectList)
+    // projectList[0].scrollIntoView()
+
     const showAllProjects = projectDatas.map((projectData)=>{
         if(projectData.type === "javascript" || projectData.type === "react"){
             return (
@@ -51,9 +55,11 @@ export default function Projects() {
                 <button>React</button>
                 {/* <button>Node</button> */}
             </div>
+            
             <div className='projects-container'>
                 {showProjects}
             </div>
+
         </div>
     )
 }
