@@ -44,15 +44,6 @@ export default [{
     "repo":"https://github.com/norfkorean/JS-WeatherApp-Project"
 },
 {
-    "id": 5,
-    "img": "https://imgur.com/YyB5Czt.png",
-    "name": "Restaurant Page ",
-    "description":"For this Javascript Project, I was able to navigate to different parts of the webpage without having to create more HTML files. All code was done in Javascript.",
-    "type":"Javascript",
-    "live": "https://jiparkrestaurantpageproject.netlify.app/",
-    "repo":"https://github.com/norfkorean/JS-RestaurantPage-Project"
-},
-{
     "id": 6,
     "img": "https://imgur.com/X1d0cAp.png",
     "name": "Library",
@@ -61,15 +52,7 @@ export default [{
     "live": "https://norfkorean.github.io/JS-Library-Project/",
     "repo":"https://github.com/norfkorean/JS-Library-Project"
 },
-{
-    "id": 7,
-    "img": "https://imgur.com/5Bof1NA.png",
-    "name": "Rock Paper Sciscors",
-    "description":"This was my very first Javascript ever. I used many if/else statements for this and get my hands on coding my first project.Oh my gosh what a journey it has been since.",
-    "type":"Javascript",
-    "live": "https://norfkorean.github.io/Odin-RockPaperSiccors-Project/",
-    "repo":"https://github.com/norfkorean/Odin-RockPaperSiccors-Project"
-},
+
 {
     "id": 8,
     "img": "https://imgur.com/WcL60sh.png",

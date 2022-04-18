@@ -5,6 +5,9 @@ import reactDatas from '../reactData'
 export default function Projects() {
 
     const [projectNumber, setProjectNumber] = useState(1)
+    const [showReact, setShowReact] = useState(false);
+
+    
 
     const prevBtn = () => {
         const projects = document.querySelectorAll('.projects');
@@ -29,15 +32,9 @@ export default function Projects() {
         } else if (projectNumber === 8) {
             projects[6].scrollIntoView()
             setProjectNumber(7)
-        } else if (projectNumber === 9) {
-            projects[7].scrollIntoView()
-            setProjectNumber(8)
-        } else if (projectNumber === 10) {
-            projects[8].scrollIntoView()
-            setProjectNumber(9)
         } else {
-            setProjectNumber(10)
-            projects[9].scrollIntoView()
+            setProjectNumber(8)
+            projects[7].scrollIntoView()
         }
     }
 
@@ -67,21 +64,12 @@ export default function Projects() {
         } else if (projectNumber === 7){
             projects[7].scrollIntoView()
             setProjectNumber(8);
-        } else if (projectNumber === 8){
-            projects[8].scrollIntoView()
-            setProjectNumber(9);
-        } else if (projectNumber === 9){
-            projects[9].scrollIntoView()
-            setProjectNumber(10);
         } else {
             setProjectNumber(1);
             projects[0].scrollIntoView()
         }
     }
     
-    
-
-
     const showAllProjects = projectDatas.map((projectData)=>{
         if(projectData.type === "Javascript"){
             return (
@@ -145,22 +133,21 @@ export default function Projects() {
                 <h2>Programming Languages</h2>
             </div>
             <div className='filter-bar'>
-                <button>JavaScript</button>
-                <button>React</button>
+                <button onClick={()=>{setShowReact(false)}}>JavaScript</button>
+                <button onClick={()=>{setShowReact(true)}}>React</button>
                 {/* <button>Node</button> */}
             </div>
             <h2>Javascript</h2>
             <div className='projects-container'>
                 <button className='prev-btn' onClick={prevBtn}>&#8678;</button>
                 <div className='projects-list'>
-                    {showProjects}
+                    {showReact?showReactProjects:showProjects}
                 </div>
                 <button className='next-btn' onClick={nextBtn}>&#8680;</button>
             </div>
             <div>
-                <h3>Project: {projectNumber} of {projectDatas.length}</h3>
+                <h3>Project: {projectNumber} of {showReact?reactDatas.length:projectDatas.length}</h3>
             </div>
-
         </div>
     )
 }
