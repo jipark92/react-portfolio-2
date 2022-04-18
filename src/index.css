@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Akshar', sans-serif;
 }
 
 .main-container {
@@ -11,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('https://images.unsplash.com/photo-1650179743769-89e0cc27c21c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+  /* background: url('https://images.unsplash.com/photo-1650179743769-89e0cc27c21c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -34,10 +37,16 @@ header{
 
 nav {
   /* border: 1px solid black; */
+  width: 100%;
 }
 
 ul {
   display:flex;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+  width: 100%;
+  justify-content: space-evenly;
+  
 }
 
 li {
@@ -59,29 +68,31 @@ a {
 }
 
 .about-me-container{ 
-  border: 1px solid rgb(22, 204, 32);
+  /* border: 1px solid rgb(22, 204, 32); */
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  width:50%;
+  min-width:50%;
   justify-content: space-evenly;
+  border-right: 1px solid black;
+
 }
 
 .about-me-container-2{ 
-  border: 1px solid rgb(155, 6, 214);
+  /* border: 1px solid rgb(155, 6, 214); */
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  width:50%;
+  min-width:50%;
   justify-content: space-evenly;
 }
 
+
 .profile-picture {
   border-radius: 50%;
-  height: 250px;
-  width: auto;
+  width: 100%;
 }
 
 .contact-container {
@@ -94,7 +105,8 @@ a {
 
 .real-contacts-container {
   /* border: 1px solid black; */
-  width: 50%;
+  border-right: 1px solid black;
+  min-width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -107,6 +119,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  flex-wrap:wrap
 }
 
 .address-container{
@@ -114,6 +127,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  flex-wrap:wrap
 }
 
 .email-container{ 
@@ -121,11 +135,16 @@ a {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  flex-wrap:wrap
 }
 
 .real-contacts-container img{
   height: 50px;
   width: 50px;
+}
+
+.real-contacts-container img:hover{
+  transform: scale(1.4)
 }
 
 .social-media-container {
@@ -135,11 +154,16 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social-media-container img {
   height: 50px;
   width: 50px;
+}
+
+.social-media-container img:hover {
+  transform: scale(1.4)
 }
 
 .footer-container {
@@ -148,4 +172,9 @@ a {
   justify-content: center;
   align-items: center;
   height: 5%;
+}
+
+
+h1:hover, h2:hover, h3:hover, p:hover, a:hover{
+  color: gray;
 }

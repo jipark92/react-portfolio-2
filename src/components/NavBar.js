@@ -7,13 +7,13 @@ export default function NavBar() {
             <nav>
                 <ul>
                     <Link to='/'>
-                        <li>About Me /</li>
+                        <li><h1>About Me</h1></li>
                     </Link>
                     <Link to='/projects'>
-                        <li>Projects /</li>
+                        <li><h1>Projects</h1></li>
                     </Link>
                     <Link to='/contact'>
-                        <li>Contact</li>
+                        <li><h1>Contact</h1></li>
                     </Link>
                 </ul>
             </nav>
