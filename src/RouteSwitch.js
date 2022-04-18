@@ -12,7 +12,7 @@ export default function RouteSwitch() {
             <NavBar/>
                 <Routes>
                     <Route path='/' element={<AboutMe/>}/>
-                    <Route path='/projects' element={<Projects/>}/>
+                    <Route path='skills' element={<Projects/>}/>
                     <Route path='/contact' element={<Contact/>}/>
                 </Routes>
             <Footer/>
