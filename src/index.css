@@ -36,7 +36,7 @@ header{
 
 nav {
   /* border: 1px solid black; */
-  width: 50%;
+  width: 75%;
 }
 
 ul {
@@ -188,9 +188,10 @@ a {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  /* justify-content: flex-start; */
+  justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 
 .langauge-title {
@@ -207,6 +208,7 @@ a {
   /* flex-wrap: wrap; */
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 1rem;;
 }
 
 .filter-bar button {
@@ -224,21 +226,45 @@ a {
 .projects-container {
   border: 1px solid black;
   height: 90%;
-  min-width: 100%;
-  padding: 1rem;
+  width: 100%;
+  margin: 1rem;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
+  overflow-x: scroll;
 }
 
 .projects {
   border: 1px solid black;
-  min-width: 25%;
-  height: 25%;
-
+  min-width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.project-picture-container {
+  width: 50%;
+  height: 100%;
+}
+
+.project-picture{
+  width: 100%;
+  height: 100%;
+}
+
+.project-description-container {
+  width: 50%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+
 
 .footer-container {
   border-top: 3px solid red;
