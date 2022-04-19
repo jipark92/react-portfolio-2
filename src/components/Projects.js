@@ -133,8 +133,13 @@ export default function Projects() {
                             <h2>{projectData.description}</h2>
                         </div>
                         <div className='live-source-container'>
-                            <a href={projectData.live}>DEMO</a>   
-                            <a href={projectData.repo}>CODE</a>                      
+                        <div className='react-demo-container'>
+                                <a href={projectData.live} target="_blank">DEMO<img src="https://img.icons8.com/flat-round/344/play.png"/></a>   
+                                {/* <img src="https://img.icons8.com/ios-glyphs/344/github.png"/> */}
+                            </div>
+                            <div className='react-repo-container'>
+                                <a href={projectData.repo} target="_blank">CODE<img src="https://img.icons8.com/ios-glyphs/344/github.png"/></a>
+                            </div>                     
                         </div>
                     </div>
                 </div>
@@ -160,8 +165,13 @@ export default function Projects() {
                             <h2>{reactData.description}</h2>
                         </div>
                         <div className='live-source-container'>
-                            <a href={reactData.live}>DEMO</a>   
-                            <a href={reactData.repo}>CODE</a>                      
+                            <div className='react-demo-container'>
+                                <a href={reactData.live} target="_blank">DEMO<img src="https://img.icons8.com/flat-round/344/play.png"/></a>   
+                                {/* <img src="https://img.icons8.com/ios-glyphs/344/github.png"/> */}
+                            </div>
+                            <div className='react-repo-container'>
+                                <a href={reactData.repo} target="_blank">CODE<img src="https://img.icons8.com/ios-glyphs/344/github.png"/></a>
+                            </div>                 
                         </div>
                     </div>
                 </div>
@@ -181,7 +191,7 @@ export default function Projects() {
                 <button onClick={reactFilterBtn}>React</button>
                 {/* <button>Node</button> */}
             </div>
-            <h1>{showReact? "React":"Javascript"}</h1>
+            <div>{showReact? <h1 Style="color:rgb(241, 94, 119)">React</h1>:<h1 Style="color: rgb(33,201,152)">JavaScript</h1>}</div>
             <div className='projects-container'>
                 <button className='prev-btn' onClick={showReact?reactPrevBtn:prevBtn}>&#8678;</button>
                 <div className='projects-list'>
