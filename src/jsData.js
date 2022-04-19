@@ -1,6 +1,6 @@
 export default [{
     "id": 0,
-    "img": "https://imgur.com/8EePucn.png",
+    "img": "https://imgur.com/D6JCiem.png",
     "name": "Tic Tac Toe",
     "description":"For this Javascript project, I was able to submit players name/marker in objects, take turns playing, figure out the logic to tic tac toe ",
     "type":"Javascript",
@@ -9,7 +9,7 @@ export default [{
 },
 {
     "id": 1,
-    "img": "https://imgur.com/nH4r7mP.png",
+    "img": "https://imgur.com/FpHstve.png",
     "name": "To-Do List",
     "description":"For this Javascript project, I was able to associate tasks and object/array and change their values when a user set date,change priority, add details and change title of the task.",
     "type":"Javascript",
@@ -18,7 +18,7 @@ export default [{
 },
 {
     "id": 2,
-    "img": "https://imgur.com/X4PWU6F.png",
+    "img": "https://imgur.com/osigf5y.png",
     "name": "Battleship Game",
     "description":"This was my final plain Javascript project. For this, I was able to create a computer that plays against you. The computer has no difficulty and it is completely random. ",
     "type":"Javascript",
@@ -27,7 +27,7 @@ export default [{
 },
 {
     "id": 3,
-    "img": "https://imgur.com/ib3qWIA.png",
+    "img": "https://imgur.com/LrE0EuC.png",
     "name": "Calculator",
     "description":"This was my 3rd Javascript Project. For this, I was able to store value in one variable then one in another so I can operate two numbers together.",
     "type":"Javascript",
@@ -36,8 +36,8 @@ export default [{
 },
 {
     "id": 4,
-    "img": "https://imgur.com/wKUgDLr.png",
-    "name": "Weather App",
+    "img": "https://imgur.com/WUNOEQZ.png",
+    "name": "Weather API App",
     "description":"This was my 1st API project. For this, I was able to grab api data from openwather and have the data show up on display when a user searches for a city,state,country.",
     "type":"Javascript",
     "live": "https://jipark-weatherapp.netlify.app/",
