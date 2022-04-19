@@ -45,6 +45,7 @@ ul {
   /* border: 1px solid black; */
   /* width: 100%; */
   justify-content: space-evenly;
+  margin: 1rem;
 }
 
 li {
@@ -101,9 +102,10 @@ a {
 
 .favorite-tools {
   display: flex;
-  flex-direction: ;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
 }
 
 .favorite-tools img {
@@ -112,6 +114,23 @@ a {
 }
 
 .favorite-tools img:hover {
+  transform: scale(1.2);
+}
+
+.learning-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.learning-tools img{
+  height: 50px;
+  width: 50px;
+}
+
+.learning-tools img:hover {
   transform: scale(1.2);
 }
 
@@ -236,6 +255,14 @@ a {
   border: 2px solid black;
 }
 
+.filter-bar button:nth-child(1){
+  color: rgb(33,201,152);
+}
+
+.filter-bar button:nth-child(2){
+  color: rgb(241, 94, 119);
+}
+
 .filter-bar button:hover {
   transform: scale(1.1);
   cursor: pointer;
@@ -302,7 +329,7 @@ a {
   width: 100%;
 }
 
-.live-source-container a:nth-child(1) {
+.react-demo-container a{
   border: 2px solid rgb(33,201,152);
   border-radius: 25px;
   font-size: 1.1rem;
@@ -310,7 +337,7 @@ a {
   color: rgb(33,201,152);
 }
 
-.live-source-container a:nth-child(2) {
+.react-repo-container a {
   border: 2px solid black;
   border-radius: 25px;
   font-size: 1.1rem;
@@ -318,6 +345,39 @@ a {
   color: black;
 }
 
+.react-demo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-demo-container a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-demo-container img{
+  height: 25px;
+  width: 25px;
+}
+
+.react-repo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.react-repo-container a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-repo-container img{
+  height: 25px;
+  width: 25px;
+}
 .prev-btn {
   font-size: 4rem;
   background: none;
