@@ -191,7 +191,10 @@ export default function Projects() {
                 <button onClick={reactFilterBtn}>React</button>
                 {/* <button>Node</button> */}
             </div>
-            <div>{showReact? <h1 Style="color:rgb(241, 94, 119)">React</h1>:<h1 Style="color: rgb(33,201,152)">JavaScript</h1>}</div>
+            <div className='project-number-container'>
+                <div>{showReact? <h1 Style="color:rgb(241, 94, 119)">React</h1>:<h1 Style="color: rgb(33,201,152)">JavaScript</h1>}</div>
+                <h2>Project: {projectNumber} of {showReact?reactDatas.length:projectDatas.length}</h2>
+            </div>
             <div className='projects-container'>
                 <button className='prev-btn' onClick={showReact?reactPrevBtn:prevBtn}>&#8678;</button>
                 <div className='projects-list'>
@@ -200,10 +203,7 @@ export default function Projects() {
                 <button className='next-btn' onClick={showReact?reactNextBtn:nextBtn}>&#8680;</button>
             </div>
             <div>
-                <h3>Project: {projectNumber} of {showReact?reactDatas.length:projectDatas.length}</h3>
-            </div>
-            <div>
-                <p>You can find my smaller projects at <a href="https://github.com/norfkorean">GitHub</a></p>
+                <p className='find-my'>Find my other projects at <a href="https://github.com/norfkorean">GitHub</a></p>
             </div>
         </div>
     )
