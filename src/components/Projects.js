@@ -29,9 +29,12 @@ export default function Projects() {
         } else if (projectNumber === 8) {
             projects[6].scrollIntoView()
             setProjectNumber(7)
-        } else {
-            setProjectNumber(8)
+        } else if (projectNumber === 9) {
             projects[7].scrollIntoView()
+            setProjectNumber(8)
+        }  else {
+            setProjectNumber(9)
+            projects[8].scrollIntoView()
         }
     }
 
@@ -61,6 +64,9 @@ export default function Projects() {
         } else if (projectNumber === 7){
             projects[7].scrollIntoView()
             setProjectNumber(8);
+        } else if (projectNumber === 8){
+            projects[8].scrollIntoView()
+            setProjectNumber(9);
         } else {
             setProjectNumber(1);
             projects[0].scrollIntoView()
@@ -125,7 +131,7 @@ export default function Projects() {
                     <div className='project-description-container'>
                         <div>
                             <p>Project Name:</p>
-                            <h1>{projectData.name}</h1>
+                            <h1><u>{projectData.name}</u></h1>
                             <h5>{projectData.type} / HTML / CSS</h5>
                         </div>
                         <div>
@@ -157,7 +163,7 @@ export default function Projects() {
                     <div className='project-description-container'>
                         <div>
                             <p>Project Name:</p>
-                            <h1>{reactData.name}</h1>
+                            <h1><u>{reactData.name}</u></h1>
                             <h5>{reactData.type} / HTML / CSS</h5>
                         </div>
                         <div>
@@ -203,7 +209,7 @@ export default function Projects() {
                 <button className='next-btn' onClick={showReact?reactNextBtn:nextBtn}>&#8680;</button>
             </div>
             <div>
-                <p className='find-my'>Find my other projects at <a href="https://github.com/norfkorean">GitHub</a></p>
+                <p className='find-my'>Find my rest of my work at <a href="https://github.com/norfkorean">GitHub</a></p>
             </div>
         </div>
     )

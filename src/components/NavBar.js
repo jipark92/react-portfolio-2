@@ -21,7 +21,7 @@ export default function NavBar() {
                         <li onClick={blah} id="1"><h1>About Me</h1></li>
                     </Link>
                     <Link to='/projects'>
-                        <li onClick={blah} id="2"><h1>Projects</h1></li>
+                        <li onClick={blah} id="2"><h1>| Projects |</h1></li>
                     </Link>
                     <Link to='/contact'>
                         <li onClick={blah} id="3"><h1>Contact</h1></li>
