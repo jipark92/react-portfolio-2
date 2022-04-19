@@ -20,7 +20,7 @@ export default [{
     "id": 2,
     "img": "https://imgur.com/osigf5y.png",
     "name": "Battleship Game",
-    "description":"This was my final plain Javascript project. For this, I was able to create a computer that plays against you. The computer has no difficulty and it is completely random. ",
+    "description":"Javascript project. For this, I was able to create a computer that plays against you. The computer has no difficulty and it is completely random. ",
     "type":"Javascript",
     "live": "https://jipark-battleshipgame.netlify.app/",
     "repo":"https://github.com/norfkorean/JS-BattleShip-Project"
