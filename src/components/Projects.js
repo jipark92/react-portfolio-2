@@ -209,7 +209,7 @@ export default function Projects() {
                 <button className='next-btn' onClick={showReact?reactNextBtn:nextBtn}>&#8680;</button>
             </div>
             <div>
-                <p className='find-my'>Find my rest of my work at <a href="https://github.com/norfkorean">GitHub</a></p>
+                <p className='find-my'>Find rest of my work at <a href="https://github.com/norfkorean">GitHub</a></p>
             </div>
         </div>
     )
