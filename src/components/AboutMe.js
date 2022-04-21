@@ -7,9 +7,9 @@ export default function AboutMe() {
                 <div className='profile-picture-container'>
                     <img src="https://avatars.githubusercontent.com/u/93008833?v=4" alt="profile-pictures" className='profile-picture'/>
                 </div>
-                <h1>Hi, I am Ji Park</h1>
-                <h2><u>Frontend Engineer</u></h2>
-                <a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:15ecbba3-e140-4b20-a07a-ec33ae9483b1#pageNum=1" target="_blank">RESUME</a>
+                <h1>Ji Park</h1>
+                <h2><u>Software Engineer</u></h2>
+                <a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:42133da8-87f3-4177-9aa1-1bd13f65390f" target="_blank">RESUME</a>
             </div>
             <div className='about-me-container-2'>
                 <h2>Can a self-taught breakdancer teach himself to program as well? This portfolio website can be your answer.</h2>

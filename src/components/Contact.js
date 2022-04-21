@@ -6,15 +6,15 @@ export default function Contact() {
             <div className='real-contacts-container'>
                 <div className='phone-container'>
                     <img src="https://img.icons8.com/flat-round/344/phone.png" alt="phone-logo"/>
-                    <p>555-555-5555</p>
+                    <p>703-397-7794</p>
                 </div>
                 <div className='address-container'>
                     <div className='address-picture'>
                         <img src="https://img.icons8.com/fluency/344/address.png" alt="address-logo"/>
                     </div>
                     <div className='address'>
-                        <p>1234 Test Street</p>
-                        <p>city,state,12345</p>
+                        <p>327 Moseby Ct</p>
+                        <p>Manassas Park, VA, 20111</p>
                     </div>
                 </div>
                 <div className='email-container'>
@@ -24,7 +24,7 @@ export default function Contact() {
             </div>
             <div className='social-media-container'>
                 <a href="https://t.co/2Ed6qCNfkO" target='_blank'><img src="https://img.icons8.com/external-justicon-flat-justicon/344/external-linkedin-social-media-justicon-flat-justicon.png" alt="linkedin-logo"/></a>
-                <a href="https://github.com/norfkorean" target='_blank'><img src="https://img.icons8.com/color/344/github--v1.png" alt="github-logo"/></a>
+                <a href="https://github.com/norfkorean" target='_blank'><img src="https://img.icons8.com/ios-filled/344/github.png" alt="github-logo"/></a>
                 {/* <a href="https://hashnode.com/@NorfKorean" target='_blank'><img src="https://img.icons8.com/color/344/hashnode.png" alt="hashnode-logo"/></a>
                 <a href="https://twitter.com/norfkorean" target='_blank'><img src="https://img.icons8.com/fluency/344/twitter.png" alt="twitter-logo"/></a>
                 <a href="https://www.tiktok.com/@norfkorean" target='_blank'><img src="https://img.icons8.com/color/344/tiktok--v1.png" alt="tiktok-logo"/></a>

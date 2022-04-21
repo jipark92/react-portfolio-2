@@ -432,8 +432,16 @@ a {
   min-height: 5%;
 }
 
+.footer-container img {
+  height:15px;
+  width: 15px;
+}
+
 .footer-container a {
   color: black;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
 h1:hover, h2:hover, h3:hover, p:hover, a:hover{
