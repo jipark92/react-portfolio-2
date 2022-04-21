@@ -118,6 +118,23 @@ a {
   transform: scale(1.2);
 }
 
+.other-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.other-tools img {
+    height: 50px;
+    width: 50px;
+}
+
+.other-tools img:hover {
+  transform: scale(1.2);
+}
+
 .learning-tools {
   display: flex;
   flex-wrap: wrap;
@@ -171,26 +188,28 @@ a {
 .phone-container {
   display:flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.5rem;
-  flex-wrap:wrap
+  flex-wrap:wrap;
+  min-width: 50%;
 }
 
 .address-container{
   display:flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.5rem;
-  flex-wrap:wrap
+  flex-wrap:wrap;
+  min-width: 50%;
 }
 
 .email-container{ 
   display:flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.5rem;
   flex-wrap:wrap;
-  /* width: 120%; */
+  min-width: 50%;
 }
 
 .real-contacts-container img{
@@ -484,6 +503,21 @@ h1:hover, h2:hover, h3:hover, p:hover, a:hover{
     width: 100%;
   }
 
+  .phone-container {
+    display:flex;
+   flex-direction: column;
+  }
+
+  .address-container {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .email-container{
+    display:flex;
+    flex-direction: column;
+  }
+
   .projects-container {
     border: 1px solid black;
     min-width: 75%;
@@ -532,7 +566,25 @@ h1:hover, h2:hover, h3:hover, p:hover, a:hover{
     /* border: 1px solid black; */
   }
 
+  .tools-container{ 
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .tools-container div:nth-child(2) {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+
   .favorite-tools img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .other-tools img {
     height: 25px;
     width: 25px;
   }
