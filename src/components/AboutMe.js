@@ -9,7 +9,7 @@ export default function AboutMe() {
                 </div>
                 <h1>Ji Park</h1>
                 <h2><u>Software Engineer</u></h2>
-                <a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:42133da8-87f3-4177-9aa1-1bd13f65390f" target="_blank">RESUME</a>
+                <a href="" target="_blank">DISABLED RESUME</a>
             </div>
             <div className='about-me-container-2'>
                 <h2>Can a self-taught breakdancer teach himself to program as well? This portfolio website can be your answer.</h2>

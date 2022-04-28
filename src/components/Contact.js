@@ -6,15 +6,15 @@ export default function Contact() {
             <div className='real-contacts-container'>
                 <div className='phone-container'>
                     <img src="https://img.icons8.com/flat-round/344/phone.png" alt="phone-logo"/>
-                    <p>703-397-7794</p>
+                    <p>555-555-5555</p>
                 </div>
                 <div className='address-container'>
                     <div className='address-picture'>
                         <img src="https://img.icons8.com/fluency/344/address.png" alt="address-logo"/>
                     </div>
                     <div className='address'>
-                        <p>327 Moseby Ct</p>
-                        <p>Manassas Park, VA, 20111</p>
+                        <p>123 test st</p>
+                        <p>test city, test state, test zip</p>
                     </div>
                 </div>
                 <div className='email-container'>
